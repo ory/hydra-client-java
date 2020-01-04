@@ -1,19 +1,19 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>sh.ory.hydra</groupId>
-    <artifactId>client</artifactId>
+    <artifactId>hydra-client</artifactId>
     <packaging>jar</packaging>
-    <name>client</name>
-    <version>0.0.0-alpha.1</version>
-    <url>https://github.com/openapitools/openapi-generator</url>
-    <description>OpenAPI Java</description>
+    <name>hydra-client</name>
+    <version>0.0.0-SNAPSHOT</version>
+    <url>https://github.com/ory/hydra-client-java</url>
+    <description>Java Client for ORY hydra</description>
     <scm>
-        <connection>scm:git:git://github.com/ory/sdk.git</connection>
-        <developerConnection>scm:git:git@github.com:ory/sdk.git</developerConnection>
-        <url>https://github.com/ory/sdk</url>
-        <tag>client-0.0.0-alpha.1</tag>
+        <connection>scm:git:git@github.com:ory/hydra-client-java.git</connection>
+        <developerConnection>scm:git:git@github.com:ory/hydra-client-java.git</developerConnection>
+        <url>https://github.com/ory/hydra-client-java</url>
     </scm>
-
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -21,7 +21,6 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-
     <developers>
         <developer>
             <name>ORY</name>
@@ -30,7 +29,6 @@
             <organizationUrl>https://www.ory.sh</organizationUrl>
         </developer>
     </developers>
-
     <build>
         <plugins>
             <plugin>
@@ -83,7 +81,6 @@
                     </execution>
                 </executions>
             </plugin>
-
             <!-- attach test jar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -100,7 +97,6 @@
                 <configuration>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
@@ -167,7 +163,6 @@
                     </execution>
                 </executions>
             </plugin>
-
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>2.8.2</version>
@@ -212,7 +207,6 @@
             </plugin>
         </plugins>
     </build>
-
     <profiles>
         <profile>
             <id>sign-artifacts</id>
@@ -235,8 +229,18 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <version>1.6.7</version>
+            <extensions>true</extensions>
+            <configuration>
+                <serverId>ossrh</serverId>
+                <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                <autoReleaseAfterClose>true</autoReleaseAfterClose>
+            </configuration>
+        </profile>
     </profiles>
-
     <dependencies>
         <dependency>
             <groupId>io.swagger</groupId>
