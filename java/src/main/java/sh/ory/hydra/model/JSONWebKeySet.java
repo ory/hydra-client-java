@@ -30,7 +30,7 @@ import sh.ory.hydra.model.JSONWebKey;
 /**
  * JSONWebKeySet
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:37:25.079908Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:43:19.710381Z[GMT]")
 public class JSONWebKeySet {
   public static final String SERIALIZED_NAME_KEYS = "keys";
   @SerializedName(SERIALIZED_NAME_KEYS)

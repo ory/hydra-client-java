@@ -18,7 +18,7 @@ import sh.ory.hydra.Pair;
 import java.util.Map;
 import java.util.List;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:37:25.079908Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:43:19.710381Z[GMT]")
 public class ApiKeyAuth implements Authentication {
   private final String location;
   private final String paramName;

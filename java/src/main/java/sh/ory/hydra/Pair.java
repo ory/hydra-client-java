@@ -13,7 +13,7 @@
 
 package sh.ory.hydra;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:37:25.079908Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:43:19.710381Z[GMT]")
 public class Pair {
     private String name = "";
     private String value = "";
