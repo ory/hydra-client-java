@@ -31,7 +31,7 @@ import sh.ory.hydra.model.OpenIDConnectContext;
 /**
  * LoginRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:34:44.462938Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:37:25.079908Z[GMT]")
 public class LoginRequest {
   public static final String SERIALIZED_NAME_CHALLENGE = "challenge";
   @SerializedName(SERIALIZED_NAME_CHALLENGE)
