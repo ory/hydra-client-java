@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * Version
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:43:19.710381Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:53:58.307370Z[GMT]")
 public class Version {
   public static final String SERIALIZED_NAME_VERSION = "version";
   @SerializedName(SERIALIZED_NAME_VERSION)

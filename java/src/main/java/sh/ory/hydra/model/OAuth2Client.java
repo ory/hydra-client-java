@@ -33,7 +33,7 @@ import sh.ory.hydra.model.JSONWebKeySet;
 /**
  * OAuth2Client
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:43:19.710381Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:53:58.307370Z[GMT]")
 public class OAuth2Client {
   public static final String SERIALIZED_NAME_ALLOWED_CORS_ORIGINS = "allowed_cors_origins";
   @SerializedName(SERIALIZED_NAME_ALLOWED_CORS_ORIGINS)

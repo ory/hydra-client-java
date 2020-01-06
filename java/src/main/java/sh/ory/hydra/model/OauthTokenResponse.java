@@ -28,7 +28,7 @@ import java.io.IOException;
  * The token response
  */
 @ApiModel(description = "The token response")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:43:19.710381Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-06T20:53:58.307370Z[GMT]")
 public class OauthTokenResponse {
   public static final String SERIALIZED_NAME_ACCESS_TOKEN = "access_token";
   @SerializedName(SERIALIZED_NAME_ACCESS_TOKEN)
