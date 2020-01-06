@@ -1,8 +1,8 @@
 lazy val root = (project in file(".")).
   settings(
     organization := "sh.ory.hydra",
-    name := "client",
-    version := "v0.0.0-alpha.1",
+    name := "hydra-client",
+    version := "v0.0.0-alpha.2",
     scalaVersion := "2.11.4",
     scalacOptions ++= Seq("-feature"),
     javacOptions in compile ++= Seq("-Xlint:deprecation"),
