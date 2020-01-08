@@ -29,7 +29,7 @@ import java.util.List;
 /**
  * IPNet
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-08T09:52:59.412240Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-08T11:33:47.803525Z[GMT]")
 public class IPNet {
   public static final String SERIALIZED_NAME_I_P = "IP";
   @SerializedName(SERIALIZED_NAME_I_P)

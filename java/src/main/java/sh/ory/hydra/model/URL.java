@@ -28,7 +28,7 @@ import java.io.IOException;
  * The general form represented is:  [scheme:][//[userinfo@]host][/]path[?query][#fragment]  URLs that do not start with a slash after the scheme are interpreted as:  scheme:opaque[?query][#fragment]  Note that the Path field is stored in decoded form: /%47%6f%2f becomes /Go/. A consequence is that it is impossible to tell which slashes in the Path were slashes in the raw URL and which were %2f. This distinction is rarely important, but when it is, the code should use RawPath, an optional field which only gets set if the default encoding is different from Path.  URL&#39;s String method uses the EscapedPath method to obtain the path. See the EscapedPath method for more details.
  */
 @ApiModel(description = "The general form represented is:  [scheme:][//[userinfo@]host][/]path[?query][#fragment]  URLs that do not start with a slash after the scheme are interpreted as:  scheme:opaque[?query][#fragment]  Note that the Path field is stored in decoded form: /%47%6f%2f becomes /Go/. A consequence is that it is impossible to tell which slashes in the Path were slashes in the raw URL and which were %2f. This distinction is rarely important, but when it is, the code should use RawPath, an optional field which only gets set if the default encoding is different from Path.  URL's String method uses the EscapedPath method to obtain the path. See the EscapedPath method for more details.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-08T09:52:59.412240Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-08T11:33:47.803525Z[GMT]")
 public class URL {
   public static final String SERIALIZED_NAME_FORCE_QUERY = "ForceQuery";
   @SerializedName(SERIALIZED_NAME_FORCE_QUERY)
@@ -258,11 +258,11 @@ public class URL {
   }
 
    /**
-   * Userinfo Userinfo Userinfo The Userinfo type is an immutable encapsulation of username and password details for a URL. An existing Userinfo value is guaranteed to have a username set (potentially empty, as allowed by RFC 2396), and optionally a password.
+   * Userinfo Userinfo Userinfo Userinfo Userinfo The Userinfo type is an immutable encapsulation of username and password details for a URL. An existing Userinfo value is guaranteed to have a username set (potentially empty, as allowed by RFC 2396), and optionally a password.
    * @return user
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "Userinfo Userinfo Userinfo The Userinfo type is an immutable encapsulation of username and password details for a URL. An existing Userinfo value is guaranteed to have a username set (potentially empty, as allowed by RFC 2396), and optionally a password.")
+  @ApiModelProperty(value = "Userinfo Userinfo Userinfo Userinfo Userinfo The Userinfo type is an immutable encapsulation of username and password details for a URL. An existing Userinfo value is guaranteed to have a username set (potentially empty, as allowed by RFC 2396), and optionally a password.")
 
   public Object getUser() {
     return user;

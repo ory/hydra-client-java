@@ -27,10 +27,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Extension Extension Extension Extension represents the ASN.1 structure of the same name. See RFC 5280, section 4.2.
+ * Extension Extension Extension Extension Extension Extension represents the ASN.1 structure of the same name. See RFC 5280, section 4.2.
  */
-@ApiModel(description = "Extension Extension Extension Extension represents the ASN.1 structure of the same name. See RFC 5280, section 4.2.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-08T09:52:59.412240Z[GMT]")
+@ApiModel(description = "Extension Extension Extension Extension Extension Extension represents the ASN.1 structure of the same name. See RFC 5280, section 4.2.")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-08T11:33:47.803525Z[GMT]")
 public class Extension {
   public static final String SERIALIZED_NAME_CRITICAL = "Critical";
   @SerializedName(SERIALIZED_NAME_CRITICAL)

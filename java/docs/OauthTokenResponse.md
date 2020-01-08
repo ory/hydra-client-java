@@ -2,7 +2,7 @@
 
 # OauthTokenResponse
 
-OauthTokenResponse The token response
+The token response
 ## Properties
 
 Name | Type | Description | Notes

@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **rawPath** | **String** | raw path |  [optional]
 **rawQuery** | **String** | raw query |  [optional]
 **scheme** | **String** | scheme |  [optional]
-**user** | [**Object**](.md) | Userinfo Userinfo Userinfo The Userinfo type is an immutable encapsulation of username and password details for a URL. An existing Userinfo value is guaranteed to have a username set (potentially empty, as allowed by RFC 2396), and optionally a password. |  [optional]
+**user** | [**Object**](.md) | Userinfo Userinfo Userinfo Userinfo Userinfo The Userinfo type is an immutable encapsulation of username and password details for a URL. An existing Userinfo value is guaranteed to have a username set (potentially empty, as allowed by RFC 2396), and optionally a password. |  [optional]
 
 
 
