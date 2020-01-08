@@ -2,6 +2,7 @@
 
 # JSONWebKeySet
 
+JSONWebKeySet JSON web key set
 ## Properties
 
 Name | Type | Description | Notes
