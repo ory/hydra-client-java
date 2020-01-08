@@ -29,7 +29,7 @@ import org.threeten.bp.OffsetDateTime;
  * FlushInactiveOAuth2TokensRequest flush inactive o auth2 tokens request
  */
 @ApiModel(description = "FlushInactiveOAuth2TokensRequest flush inactive o auth2 tokens request")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-08T11:33:47.803525Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-08T12:26:42.860266Z[GMT]")
 public class FlushInactiveOAuth2TokensRequest {
   public static final String SERIALIZED_NAME_NOT_AFTER = "notAfter";
   @SerializedName(SERIALIZED_NAME_NOT_AFTER)

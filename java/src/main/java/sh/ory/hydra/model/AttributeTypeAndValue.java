@@ -27,10 +27,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue mirrors the ASN.1 structure of the same name in RFC 5280, Section 4.1.2.4.
+ * AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue mirrors the ASN.1 structure of the same name in RFC 5280, Section 4.1.2.4.
  */
-@ApiModel(description = "AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue mirrors the ASN.1 structure of the same name in RFC 5280, Section 4.1.2.4.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-08T11:33:47.803525Z[GMT]")
+@ApiModel(description = "AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue AttributeTypeAndValue mirrors the ASN.1 structure of the same name in RFC 5280, Section 4.1.2.4.")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-08T12:26:42.860266Z[GMT]")
 public class AttributeTypeAndValue {
   public static final String SERIALIZED_NAME_TYPE = "Type";
   @SerializedName(SERIALIZED_NAME_TYPE)
