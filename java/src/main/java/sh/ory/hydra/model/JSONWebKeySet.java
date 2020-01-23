@@ -28,10 +28,10 @@ import java.util.List;
 import sh.ory.hydra.model.JSONWebKey;
 
 /**
- * JSONWebKeySet JSONWebKeySet JSON web key set
+ * JSONWebKeySet JSON web key set
  */
-@ApiModel(description = "JSONWebKeySet JSONWebKeySet JSON web key set")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-16T10:00:46.134292Z[GMT]")
+@ApiModel(description = "JSONWebKeySet JSON web key set")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T15:26:02.976569Z[GMT]")
 public class JSONWebKeySet {
   public static final String SERIALIZED_NAME_KEYS = "keys";
   @SerializedName(SERIALIZED_NAME_KEYS)
