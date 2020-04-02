@@ -33,7 +33,7 @@ import sh.ory.hydra.model.ConsentRequestSession;
  * PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession The response used to return used consent requests same as HandledLoginRequest, just with consent_request exposed as json
  */
 @ApiModel(description = "PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession PreviousConsentSession The response used to return used consent requests same as HandledLoginRequest, just with consent_request exposed as json")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-04-02T10:32:48.736613Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-04-02T12:48:32.408042Z[GMT]")
 public class PreviousConsentSession {
   public static final String SERIALIZED_NAME_CONSENT_REQUEST = "consent_request";
   @SerializedName(SERIALIZED_NAME_CONSENT_REQUEST)
