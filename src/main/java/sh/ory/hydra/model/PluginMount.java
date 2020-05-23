@@ -30,7 +30,7 @@ import java.util.List;
  * PluginMount plugin mount
  */
 @ApiModel(description = "PluginMount plugin mount")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-23T15:40:20.175179Z[GMT]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-23T16:14:41.404500Z[GMT]")
 public class PluginMount {
   public static final String SERIALIZED_NAME_DESCRIPTION = "Description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
