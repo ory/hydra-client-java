@@ -28,7 +28,7 @@ import java.time.OffsetDateTime;
 /**
  * FlushInactiveOAuth2TokensRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:10:23.916289919Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:35:37.819660114Z[Etc/UTC]")
 public class FlushInactiveOAuth2TokensRequest {
   public static final String SERIALIZED_NAME_NOT_AFTER = "notAfter";
   @SerializedName(SERIALIZED_NAME_NOT_AFTER)

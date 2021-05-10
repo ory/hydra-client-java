@@ -30,7 +30,7 @@ import java.util.List;
  * PluginConfigArgs plugin config args
  */
 @ApiModel(description = "PluginConfigArgs plugin config args")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:10:23.916289919Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:35:37.819660114Z[Etc/UTC]")
 public class PluginConfigArgs {
   public static final String SERIALIZED_NAME_DESCRIPTION = "Description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)

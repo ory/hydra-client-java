@@ -29,7 +29,7 @@ import java.util.List;
 /**
  * OpenIDConnectContext
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:10:23.916289919Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:35:37.819660114Z[Etc/UTC]")
 public class OpenIDConnectContext {
   public static final String SERIALIZED_NAME_ACR_VALUES = "acr_values";
   @SerializedName(SERIALIZED_NAME_ACR_VALUES)

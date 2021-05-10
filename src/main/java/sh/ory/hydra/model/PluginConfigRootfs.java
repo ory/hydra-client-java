@@ -30,7 +30,7 @@ import java.util.List;
  * PluginConfigRootfs plugin config rootfs
  */
 @ApiModel(description = "PluginConfigRootfs plugin config rootfs")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:10:23.916289919Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:35:37.819660114Z[Etc/UTC]")
 public class PluginConfigRootfs {
   public static final String SERIALIZED_NAME_DIFF_IDS = "diff_ids";
   @SerializedName(SERIALIZED_NAME_DIFF_IDS)
