@@ -28,7 +28,7 @@ import java.io.IOException;
  * A JSONPatch document as defined by RFC 6902
  */
 @ApiModel(description = "A JSONPatch document as defined by RFC 6902")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:35:37.819660114Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:38:21.290329757Z[Etc/UTC]")
 public class PatchDocument {
   public static final String SERIALIZED_NAME_FROM = "from";
   @SerializedName(SERIALIZED_NAME_FROM)

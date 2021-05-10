@@ -31,7 +31,7 @@ import sh.ory.hydra.model.OpenIDConnectContext;
 /**
  * ConsentRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:35:37.819660114Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:38:21.290329757Z[Etc/UTC]")
 public class ConsentRequest {
   public static final String SERIALIZED_NAME_ACR = "acr";
   @SerializedName(SERIALIZED_NAME_ACR)

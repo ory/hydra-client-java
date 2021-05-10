@@ -32,7 +32,7 @@ import sh.ory.hydra.model.VolumeUsageData;
  * Volume volume
  */
 @ApiModel(description = "Volume volume")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:35:37.819660114Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:38:21.290329757Z[Etc/UTC]")
 public class Volume {
   public static final String SERIALIZED_NAME_CREATED_AT = "CreatedAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
