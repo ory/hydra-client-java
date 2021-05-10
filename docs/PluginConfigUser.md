@@ -3,6 +3,7 @@
 # PluginConfigUser
 
 PluginConfigUser plugin config user
+
 ## Properties
 
 Name | Type | Description | Notes

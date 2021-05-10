@@ -3,6 +3,7 @@
 # PluginConfigArgs
 
 PluginConfigArgs plugin config args
+
 ## Properties
 
 Name | Type | Description | Notes

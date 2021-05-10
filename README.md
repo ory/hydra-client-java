@@ -1,8 +1,8 @@
 # hydra-client
 
 ORY Hydra
-- API version: v1.9.1
-  - Build date: 2021-01-27T10:02:09.580840730Z[Etc/UTC]
+- API version: v1.10.3
+  - Build date: 2021-05-10T16:10:23.916289919Z[Etc/UTC]
 
 Welcome to the ORY Hydra HTTP API documentation. You will find documentation for all HTTP APIs here.
 
@@ -13,7 +13,7 @@ Welcome to the ORY Hydra HTTP API documentation. You will find documentation for
 ## Requirements
 
 Building the API client library requires:
-1. Java 1.7+
+1. Java 1.8+
 2. Maven/Gradle
 
 ## Installation
@@ -40,7 +40,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>sh.ory.hydra</groupId>
   <artifactId>hydra-client</artifactId>
-  <version>v1.9.1</version>
+  <version>v1.10.3</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -50,7 +50,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "sh.ory.hydra:hydra-client:v1.9.1"
+compile "sh.ory.hydra:hydra-client:v1.10.3"
 ```
 
 ### Others
@@ -63,7 +63,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/hydra-client-v1.9.1.jar`
+* `target/hydra-client-v1.10.3.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -129,6 +129,7 @@ Class | Method | HTTP request | Description
 *AdminApi* | [**isInstanceAlive**](docs/AdminApi.md#isInstanceAlive) | **GET** /health/alive | Check Alive Status
 *AdminApi* | [**listOAuth2Clients**](docs/AdminApi.md#listOAuth2Clients) | **GET** /clients | List OAuth 2.0 Clients
 *AdminApi* | [**listSubjectConsentSessions**](docs/AdminApi.md#listSubjectConsentSessions) | **GET** /oauth2/auth/sessions/consent | Lists All Consent Sessions of a Subject
+*AdminApi* | [**patchOAuth2Client**](docs/AdminApi.md#patchOAuth2Client) | **PATCH** /clients/{id} | Patch an OAuth 2.0 Client
 *AdminApi* | [**prometheus**](docs/AdminApi.md#prometheus) | **GET** /metrics/prometheus | Get Snapshot Metrics from the Hydra Service.
 *AdminApi* | [**rejectConsentRequest**](docs/AdminApi.md#rejectConsentRequest) | **PUT** /oauth2/auth/requests/consent/reject | Reject a Consent Request
 *AdminApi* | [**rejectLoginRequest**](docs/AdminApi.md#rejectLoginRequest) | **PUT** /oauth2/auth/requests/login/reject | Reject a Login Request
@@ -169,6 +170,7 @@ Class | Method | HTTP request | Description
  - [OAuth2TokenIntrospection](docs/OAuth2TokenIntrospection.md)
  - [Oauth2TokenResponse](docs/Oauth2TokenResponse.md)
  - [OpenIDConnectContext](docs/OpenIDConnectContext.md)
+ - [PatchDocument](docs/PatchDocument.md)
  - [PluginConfig](docs/PluginConfig.md)
  - [PluginConfigArgs](docs/PluginConfigArgs.md)
  - [PluginConfigInterface](docs/PluginConfigInterface.md)
@@ -183,8 +185,10 @@ Class | Method | HTTP request | Description
  - [PluginSettings](docs/PluginSettings.md)
  - [PreviousConsentSession](docs/PreviousConsentSession.md)
  - [RejectRequest](docs/RejectRequest.md)
+ - [RequestWasHandledResponse](docs/RequestWasHandledResponse.md)
  - [UserinfoResponse](docs/UserinfoResponse.md)
  - [Version](docs/Version.md)
+ - [Volume](docs/Volume.md)
  - [VolumeUsageData](docs/VolumeUsageData.md)
  - [WellKnown](docs/WellKnown.md)
 

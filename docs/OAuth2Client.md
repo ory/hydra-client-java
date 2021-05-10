@@ -2,6 +2,7 @@
 
 # OAuth2Client
 
+
 ## Properties
 
 Name | Type | Description | Notes

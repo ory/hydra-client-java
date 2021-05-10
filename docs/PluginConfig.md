@@ -2,6 +2,7 @@
 
 # PluginConfig
 
+
 ## Properties
 
 Name | Type | Description | Notes

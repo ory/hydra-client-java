@@ -1,4 +1,5 @@
 .gitignore
+.openapi-generator-ignore
 .travis.yml
 README.md
 api/openapi.yaml
@@ -24,6 +25,7 @@ docs/OAuth2Client.md
 docs/OAuth2TokenIntrospection.md
 docs/Oauth2TokenResponse.md
 docs/OpenIDConnectContext.md
+docs/PatchDocument.md
 docs/PluginConfig.md
 docs/PluginConfigArgs.md
 docs/PluginConfigInterface.md
@@ -39,8 +41,10 @@ docs/PluginSettings.md
 docs/PreviousConsentSession.md
 docs/PublicApi.md
 docs/RejectRequest.md
+docs/RequestWasHandledResponse.md
 docs/UserinfoResponse.md
 docs/Version.md
+docs/Volume.md
 docs/VolumeUsageData.md
 docs/WellKnown.md
 git_push.sh
@@ -94,6 +98,7 @@ src/main/java/sh/ory/hydra/model/OAuth2Client.java
 src/main/java/sh/ory/hydra/model/OAuth2TokenIntrospection.java
 src/main/java/sh/ory/hydra/model/Oauth2TokenResponse.java
 src/main/java/sh/ory/hydra/model/OpenIDConnectContext.java
+src/main/java/sh/ory/hydra/model/PatchDocument.java
 src/main/java/sh/ory/hydra/model/PluginConfig.java
 src/main/java/sh/ory/hydra/model/PluginConfigArgs.java
 src/main/java/sh/ory/hydra/model/PluginConfigInterface.java
@@ -108,8 +113,10 @@ src/main/java/sh/ory/hydra/model/PluginMount.java
 src/main/java/sh/ory/hydra/model/PluginSettings.java
 src/main/java/sh/ory/hydra/model/PreviousConsentSession.java
 src/main/java/sh/ory/hydra/model/RejectRequest.java
+src/main/java/sh/ory/hydra/model/RequestWasHandledResponse.java
 src/main/java/sh/ory/hydra/model/UserinfoResponse.java
 src/main/java/sh/ory/hydra/model/Version.java
+src/main/java/sh/ory/hydra/model/Volume.java
 src/main/java/sh/ory/hydra/model/VolumeUsageData.java
 src/main/java/sh/ory/hydra/model/WellKnown.java
 src/test/java/sh/ory/hydra/api/AdminApiTest.java
@@ -133,6 +140,7 @@ src/test/java/sh/ory/hydra/model/OAuth2ClientTest.java
 src/test/java/sh/ory/hydra/model/OAuth2TokenIntrospectionTest.java
 src/test/java/sh/ory/hydra/model/Oauth2TokenResponseTest.java
 src/test/java/sh/ory/hydra/model/OpenIDConnectContextTest.java
+src/test/java/sh/ory/hydra/model/PatchDocumentTest.java
 src/test/java/sh/ory/hydra/model/PluginConfigArgsTest.java
 src/test/java/sh/ory/hydra/model/PluginConfigInterfaceTest.java
 src/test/java/sh/ory/hydra/model/PluginConfigLinuxTest.java
@@ -147,7 +155,9 @@ src/test/java/sh/ory/hydra/model/PluginMountTest.java
 src/test/java/sh/ory/hydra/model/PluginSettingsTest.java
 src/test/java/sh/ory/hydra/model/PreviousConsentSessionTest.java
 src/test/java/sh/ory/hydra/model/RejectRequestTest.java
+src/test/java/sh/ory/hydra/model/RequestWasHandledResponseTest.java
 src/test/java/sh/ory/hydra/model/UserinfoResponseTest.java
 src/test/java/sh/ory/hydra/model/VersionTest.java
+src/test/java/sh/ory/hydra/model/VolumeTest.java
 src/test/java/sh/ory/hydra/model/VolumeUsageDataTest.java
 src/test/java/sh/ory/hydra/model/WellKnownTest.java

@@ -3,6 +3,7 @@
 # PluginConfigLinux
 
 PluginConfigLinux plugin config linux
+
 ## Properties
 
 Name | Type | Description | Notes

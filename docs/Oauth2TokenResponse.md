@@ -3,6 +3,7 @@
 # Oauth2TokenResponse
 
 The Access Token Response
+
 ## Properties
 
 Name | Type | Description | Notes

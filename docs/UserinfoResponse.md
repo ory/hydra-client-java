@@ -3,6 +3,7 @@
 # UserinfoResponse
 
 The userinfo response
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -3,6 +3,7 @@
 # PluginConfigInterface
 
 PluginConfigInterface The interface between Docker and the plugin
+
 ## Properties
 
 Name | Type | Description | Notes

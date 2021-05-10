@@ -25,6 +25,7 @@ Method | HTTP request | Description
 [**isInstanceAlive**](AdminApi.md#isInstanceAlive) | **GET** /health/alive | Check Alive Status
 [**listOAuth2Clients**](AdminApi.md#listOAuth2Clients) | **GET** /clients | List OAuth 2.0 Clients
 [**listSubjectConsentSessions**](AdminApi.md#listSubjectConsentSessions) | **GET** /oauth2/auth/sessions/consent | Lists All Consent Sessions of a Subject
+[**patchOAuth2Client**](AdminApi.md#patchOAuth2Client) | **PATCH** /clients/{id} | Patch an OAuth 2.0 Client
 [**prometheus**](AdminApi.md#prometheus) | **GET** /metrics/prometheus | Get Snapshot Metrics from the Hydra Service.
 [**rejectConsentRequest**](AdminApi.md#rejectConsentRequest) | **PUT** /oauth2/auth/requests/consent/reject | Reject a Consent Request
 [**rejectLoginRequest**](AdminApi.md#rejectLoginRequest) | **PUT** /oauth2/auth/requests/login/reject | Reject a Login Request
@@ -747,7 +748,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | consentRequest |  -  |
 **404** | genericError |  -  |
-**409** | genericError |  -  |
+**410** | requestWasHandledResponse |  -  |
 **500** | genericError |  -  |
 
 <a name="getJsonWebKey"></a>
@@ -944,7 +945,7 @@ No authorization required
 **200** | loginRequest |  -  |
 **400** | genericError |  -  |
 **404** | genericError |  -  |
-**409** | genericError |  -  |
+**410** | requestWasHandledResponse |  -  |
 **500** | genericError |  -  |
 
 <a name="getLogoutRequest"></a>
@@ -1009,6 +1010,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | logoutRequest |  -  |
 **404** | genericError |  -  |
+**410** | requestWasHandledResponse |  -  |
 **500** | genericError |  -  |
 
 <a name="getOAuth2Client"></a>
@@ -1387,6 +1389,71 @@ No authorization required
 **400** | genericError |  -  |
 **500** | genericError |  -  |
 
+<a name="patchOAuth2Client"></a>
+# **patchOAuth2Client**
+> OAuth2Client patchOAuth2Client(id, body)
+
+Patch an OAuth 2.0 Client
+
+Patch an existing OAuth 2.0 Client. If you pass &#x60;client_secret&#x60; the secret will be updated and returned via the API. This is the only time you will be able to retrieve the client secret, so write it down and keep it safe.  OAuth 2.0 clients are used to perform OAuth 2.0 and OpenID Connect flows. Usually, OAuth 2.0 clients are generated for applications which want to consume your OAuth 2.0 or OpenID Connect capabilities. To manage ORY Hydra, you will need an OAuth 2.0 Client as well. Make sure that this endpoint is well protected and only callable by first-party components.
+
+### Example
+```java
+// Import classes:
+import sh.ory.hydra.ApiClient;
+import sh.ory.hydra.ApiException;
+import sh.ory.hydra.Configuration;
+import sh.ory.hydra.models.*;
+import sh.ory.hydra.api.AdminApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("http://localhost");
+
+    AdminApi apiInstance = new AdminApi(defaultClient);
+    String id = "id_example"; // String | 
+    List<PatchDocument> body = Arrays.asList(); // List<PatchDocument> | 
+    try {
+      OAuth2Client result = apiInstance.patchOAuth2Client(id, body);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling AdminApi#patchOAuth2Client");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  |
+ **body** | [**List&lt;PatchDocument&gt;**](PatchDocument.md)|  |
+
+### Return type
+
+[**OAuth2Client**](OAuth2Client.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | oAuth2Client |  -  |
+**500** | genericError |  -  |
+
 <a name="prometheus"></a>
 # **prometheus**
 > prometheus()
@@ -1704,7 +1771,6 @@ No authorization required
 |-------------|-------------|------------------|
 **204** | Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. |  -  |
 **400** | genericError |  -  |
-**404** | genericError |  -  |
 **500** | genericError |  -  |
 
 <a name="revokeConsentSessions"></a>
@@ -1772,7 +1838,6 @@ No authorization required
 |-------------|-------------|------------------|
 **204** | Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. |  -  |
 **400** | genericError |  -  |
-**404** | genericError |  -  |
 **500** | genericError |  -  |
 
 <a name="updateJsonWebKey"></a>
