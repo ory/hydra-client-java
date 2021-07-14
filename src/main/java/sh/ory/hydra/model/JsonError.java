@@ -25,10 +25,11 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 
 /**
- * RejectRequest
+ * Error responses are sent when an error (e.g. unauthorized, bad request, ...) occurred.
  */
+@ApiModel(description = "Error responses are sent when an error (e.g. unauthorized, bad request, ...) occurred.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-07-14T15:27:18.942684284Z[Etc/UTC]")
-public class RejectRequest {
+public class JsonError {
   public static final String SERIALIZED_NAME_ERROR = "error";
   @SerializedName(SERIALIZED_NAME_ERROR)
   private String error;
@@ -41,27 +42,23 @@ public class RejectRequest {
   @SerializedName(SERIALIZED_NAME_ERROR_DESCRIPTION)
   private String errorDescription;
 
-  public static final String SERIALIZED_NAME_ERROR_HINT = "error_hint";
-  @SerializedName(SERIALIZED_NAME_ERROR_HINT)
-  private String errorHint;
-
   public static final String SERIALIZED_NAME_STATUS_CODE = "status_code";
   @SerializedName(SERIALIZED_NAME_STATUS_CODE)
   private Long statusCode;
 
 
-  public RejectRequest error(String error) {
+  public JsonError error(String error) {
     
     this.error = error;
     return this;
   }
 
    /**
-   * The error should follow the OAuth2 error format (e.g. &#x60;invalid_request&#x60;, &#x60;login_required&#x60;).  Defaults to &#x60;request_denied&#x60;.
+   * Name is the error name.
    * @return error
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "The error should follow the OAuth2 error format (e.g. `invalid_request`, `login_required`).  Defaults to `request_denied`.")
+  @ApiModelProperty(example = "The requested resource could not be found", value = "Name is the error name.")
 
   public String getError() {
     return error;
@@ -73,18 +70,18 @@ public class RejectRequest {
   }
 
 
-  public RejectRequest errorDebug(String errorDebug) {
+  public JsonError errorDebug(String errorDebug) {
     
     this.errorDebug = errorDebug;
     return this;
   }
 
    /**
-   * Debug contains information to help resolve the problem as a developer. Usually not exposed to the public but only in the server logs.
+   * Debug contains debug information. This is usually not available and has to be enabled.
    * @return errorDebug
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "Debug contains information to help resolve the problem as a developer. Usually not exposed to the public but only in the server logs.")
+  @ApiModelProperty(example = "The database adapter was unable to find the element", value = "Debug contains debug information. This is usually not available and has to be enabled.")
 
   public String getErrorDebug() {
     return errorDebug;
@@ -96,18 +93,18 @@ public class RejectRequest {
   }
 
 
-  public RejectRequest errorDescription(String errorDescription) {
+  public JsonError errorDescription(String errorDescription) {
     
     this.errorDescription = errorDescription;
     return this;
   }
 
    /**
-   * Description of the error in a human readable format.
+   * Description contains further information on the nature of the error.
    * @return errorDescription
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "Description of the error in a human readable format.")
+  @ApiModelProperty(example = "Object with ID 12345 does not exist", value = "Description contains further information on the nature of the error.")
 
   public String getErrorDescription() {
     return errorDescription;
@@ -119,41 +116,18 @@ public class RejectRequest {
   }
 
 
-  public RejectRequest errorHint(String errorHint) {
-    
-    this.errorHint = errorHint;
-    return this;
-  }
-
-   /**
-   * Hint to help resolve the error.
-   * @return errorHint
-  **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "Hint to help resolve the error.")
-
-  public String getErrorHint() {
-    return errorHint;
-  }
-
-
-  public void setErrorHint(String errorHint) {
-    this.errorHint = errorHint;
-  }
-
-
-  public RejectRequest statusCode(Long statusCode) {
+  public JsonError statusCode(Long statusCode) {
     
     this.statusCode = statusCode;
     return this;
   }
 
    /**
-   * Represents the HTTP status code of the error (e.g. 401 or 403)  Defaults to 400
+   * Code represents the error status code (404, 403, 401, ...).
    * @return statusCode
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "Represents the HTTP status code of the error (e.g. 401 or 403)  Defaults to 400")
+  @ApiModelProperty(example = "404", value = "Code represents the error status code (404, 403, 401, ...).")
 
   public Long getStatusCode() {
     return statusCode;
@@ -173,27 +147,25 @@ public class RejectRequest {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    RejectRequest rejectRequest = (RejectRequest) o;
-    return Objects.equals(this.error, rejectRequest.error) &&
-        Objects.equals(this.errorDebug, rejectRequest.errorDebug) &&
-        Objects.equals(this.errorDescription, rejectRequest.errorDescription) &&
-        Objects.equals(this.errorHint, rejectRequest.errorHint) &&
-        Objects.equals(this.statusCode, rejectRequest.statusCode);
+    JsonError jsonError = (JsonError) o;
+    return Objects.equals(this.error, jsonError.error) &&
+        Objects.equals(this.errorDebug, jsonError.errorDebug) &&
+        Objects.equals(this.errorDescription, jsonError.errorDescription) &&
+        Objects.equals(this.statusCode, jsonError.statusCode);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(error, errorDebug, errorDescription, errorHint, statusCode);
+    return Objects.hash(error, errorDebug, errorDescription, statusCode);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class RejectRequest {\n");
+    sb.append("class JsonError {\n");
     sb.append("    error: ").append(toIndentedString(error)).append("\n");
     sb.append("    errorDebug: ").append(toIndentedString(errorDebug)).append("\n");
     sb.append("    errorDescription: ").append(toIndentedString(errorDescription)).append("\n");
-    sb.append("    errorHint: ").append(toIndentedString(errorHint)).append("\n");
     sb.append("    statusCode: ").append(toIndentedString(statusCode)).append("\n");
     sb.append("}");
     return sb.toString();

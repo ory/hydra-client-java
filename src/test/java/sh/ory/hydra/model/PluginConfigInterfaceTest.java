@@ -44,6 +44,14 @@ public class PluginConfigInterfaceTest {
     }
 
     /**
+     * Test the property 'protocolScheme'
+     */
+    @Test
+    public void protocolSchemeTest() {
+        // TODO: test protocolScheme
+    }
+
+    /**
      * Test the property 'socket'
      */
     @Test

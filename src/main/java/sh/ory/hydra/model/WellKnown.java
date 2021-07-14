@@ -30,7 +30,7 @@ import java.util.List;
  * It includes links to several endpoints (e.g. /oauth2/token) and exposes information on supported signature algorithms among others.
  */
 @ApiModel(description = "It includes links to several endpoints (e.g. /oauth2/token) and exposes information on supported signature algorithms among others.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:38:21.290329757Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-07-14T15:27:18.942684284Z[Etc/UTC]")
 public class WellKnown {
   public static final String SERIALIZED_NAME_AUTHORIZATION_ENDPOINT = "authorization_endpoint";
   @SerializedName(SERIALIZED_NAME_AUTHORIZATION_ENDPOINT)
@@ -51,6 +51,10 @@ public class WellKnown {
   public static final String SERIALIZED_NAME_CLAIMS_SUPPORTED = "claims_supported";
   @SerializedName(SERIALIZED_NAME_CLAIMS_SUPPORTED)
   private List<String> claimsSupported = null;
+
+  public static final String SERIALIZED_NAME_CODE_CHALLENGE_METHODS_SUPPORTED = "code_challenge_methods_supported";
+  @SerializedName(SERIALIZED_NAME_CODE_CHALLENGE_METHODS_SUPPORTED)
+  private List<String> codeChallengeMethodsSupported = null;
 
   public static final String SERIALIZED_NAME_END_SESSION_ENDPOINT = "end_session_endpoint";
   @SerializedName(SERIALIZED_NAME_END_SESSION_ENDPOINT)
@@ -256,6 +260,37 @@ public class WellKnown {
 
   public void setClaimsSupported(List<String> claimsSupported) {
     this.claimsSupported = claimsSupported;
+  }
+
+
+  public WellKnown codeChallengeMethodsSupported(List<String> codeChallengeMethodsSupported) {
+    
+    this.codeChallengeMethodsSupported = codeChallengeMethodsSupported;
+    return this;
+  }
+
+  public WellKnown addCodeChallengeMethodsSupportedItem(String codeChallengeMethodsSupportedItem) {
+    if (this.codeChallengeMethodsSupported == null) {
+      this.codeChallengeMethodsSupported = new ArrayList<>();
+    }
+    this.codeChallengeMethodsSupported.add(codeChallengeMethodsSupportedItem);
+    return this;
+  }
+
+   /**
+   * JSON array containing a list of Proof Key for Code Exchange (PKCE) [RFC7636] code challenge methods supported by this authorization server.
+   * @return codeChallengeMethodsSupported
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "JSON array containing a list of Proof Key for Code Exchange (PKCE) [RFC7636] code challenge methods supported by this authorization server.")
+
+  public List<String> getCodeChallengeMethodsSupported() {
+    return codeChallengeMethodsSupported;
+  }
+
+
+  public void setCodeChallengeMethodsSupported(List<String> codeChallengeMethodsSupported) {
+    this.codeChallengeMethodsSupported = codeChallengeMethodsSupported;
   }
 
 
@@ -813,6 +848,7 @@ public class WellKnown {
         Objects.equals(this.backchannelLogoutSupported, wellKnown.backchannelLogoutSupported) &&
         Objects.equals(this.claimsParameterSupported, wellKnown.claimsParameterSupported) &&
         Objects.equals(this.claimsSupported, wellKnown.claimsSupported) &&
+        Objects.equals(this.codeChallengeMethodsSupported, wellKnown.codeChallengeMethodsSupported) &&
         Objects.equals(this.endSessionEndpoint, wellKnown.endSessionEndpoint) &&
         Objects.equals(this.frontchannelLogoutSessionSupported, wellKnown.frontchannelLogoutSessionSupported) &&
         Objects.equals(this.frontchannelLogoutSupported, wellKnown.frontchannelLogoutSupported) &&
@@ -838,7 +874,7 @@ public class WellKnown {
 
   @Override
   public int hashCode() {
-    return Objects.hash(authorizationEndpoint, backchannelLogoutSessionSupported, backchannelLogoutSupported, claimsParameterSupported, claimsSupported, endSessionEndpoint, frontchannelLogoutSessionSupported, frontchannelLogoutSupported, grantTypesSupported, idTokenSigningAlgValuesSupported, issuer, jwksUri, registrationEndpoint, requestObjectSigningAlgValuesSupported, requestParameterSupported, requestUriParameterSupported, requireRequestUriRegistration, responseModesSupported, responseTypesSupported, revocationEndpoint, scopesSupported, subjectTypesSupported, tokenEndpoint, tokenEndpointAuthMethodsSupported, userinfoEndpoint, userinfoSigningAlgValuesSupported);
+    return Objects.hash(authorizationEndpoint, backchannelLogoutSessionSupported, backchannelLogoutSupported, claimsParameterSupported, claimsSupported, codeChallengeMethodsSupported, endSessionEndpoint, frontchannelLogoutSessionSupported, frontchannelLogoutSupported, grantTypesSupported, idTokenSigningAlgValuesSupported, issuer, jwksUri, registrationEndpoint, requestObjectSigningAlgValuesSupported, requestParameterSupported, requestUriParameterSupported, requireRequestUriRegistration, responseModesSupported, responseTypesSupported, revocationEndpoint, scopesSupported, subjectTypesSupported, tokenEndpoint, tokenEndpointAuthMethodsSupported, userinfoEndpoint, userinfoSigningAlgValuesSupported);
   }
 
   @Override
@@ -850,6 +886,7 @@ public class WellKnown {
     sb.append("    backchannelLogoutSupported: ").append(toIndentedString(backchannelLogoutSupported)).append("\n");
     sb.append("    claimsParameterSupported: ").append(toIndentedString(claimsParameterSupported)).append("\n");
     sb.append("    claimsSupported: ").append(toIndentedString(claimsSupported)).append("\n");
+    sb.append("    codeChallengeMethodsSupported: ").append(toIndentedString(codeChallengeMethodsSupported)).append("\n");
     sb.append("    endSessionEndpoint: ").append(toIndentedString(endSessionEndpoint)).append("\n");
     sb.append("    frontchannelLogoutSessionSupported: ").append(toIndentedString(frontchannelLogoutSessionSupported)).append("\n");
     sb.append("    frontchannelLogoutSupported: ").append(toIndentedString(frontchannelLogoutSupported)).append("\n");

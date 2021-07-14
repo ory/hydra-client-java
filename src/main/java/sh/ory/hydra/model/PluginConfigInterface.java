@@ -31,8 +31,12 @@ import sh.ory.hydra.model.PluginInterfaceType;
  * PluginConfigInterface The interface between Docker and the plugin
  */
 @ApiModel(description = "PluginConfigInterface The interface between Docker and the plugin")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:38:21.290329757Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-07-14T15:27:18.942684284Z[Etc/UTC]")
 public class PluginConfigInterface {
+  public static final String SERIALIZED_NAME_PROTOCOL_SCHEME = "ProtocolScheme";
+  @SerializedName(SERIALIZED_NAME_PROTOCOL_SCHEME)
+  private String protocolScheme;
+
   public static final String SERIALIZED_NAME_SOCKET = "Socket";
   @SerializedName(SERIALIZED_NAME_SOCKET)
   private String socket;
@@ -40,6 +44,29 @@ public class PluginConfigInterface {
   public static final String SERIALIZED_NAME_TYPES = "Types";
   @SerializedName(SERIALIZED_NAME_TYPES)
   private List<PluginInterfaceType> types = new ArrayList<>();
+
+
+  public PluginConfigInterface protocolScheme(String protocolScheme) {
+    
+    this.protocolScheme = protocolScheme;
+    return this;
+  }
+
+   /**
+   * Protocol to use for clients connecting to the plugin.
+   * @return protocolScheme
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "Protocol to use for clients connecting to the plugin.")
+
+  public String getProtocolScheme() {
+    return protocolScheme;
+  }
+
+
+  public void setProtocolScheme(String protocolScheme) {
+    this.protocolScheme = protocolScheme;
+  }
 
 
   public PluginConfigInterface socket(String socket) {
@@ -100,19 +127,21 @@ public class PluginConfigInterface {
       return false;
     }
     PluginConfigInterface pluginConfigInterface = (PluginConfigInterface) o;
-    return Objects.equals(this.socket, pluginConfigInterface.socket) &&
+    return Objects.equals(this.protocolScheme, pluginConfigInterface.protocolScheme) &&
+        Objects.equals(this.socket, pluginConfigInterface.socket) &&
         Objects.equals(this.types, pluginConfigInterface.types);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(socket, types);
+    return Objects.hash(protocolScheme, socket, types);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class PluginConfigInterface {\n");
+    sb.append("    protocolScheme: ").append(toIndentedString(protocolScheme)).append("\n");
     sb.append("    socket: ").append(toIndentedString(socket)).append("\n");
     sb.append("    types: ").append(toIndentedString(types)).append("\n");
     sb.append("}");

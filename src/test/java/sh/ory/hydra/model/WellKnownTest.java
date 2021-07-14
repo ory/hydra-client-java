@@ -83,6 +83,14 @@ public class WellKnownTest {
     }
 
     /**
+     * Test the property 'codeChallengeMethodsSupported'
+     */
+    @Test
+    public void codeChallengeMethodsSupportedTest() {
+        // TODO: test codeChallengeMethodsSupported
+    }
+
+    /**
      * Test the property 'endSessionEndpoint'
      */
     @Test

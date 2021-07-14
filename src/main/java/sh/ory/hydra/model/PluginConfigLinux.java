@@ -31,7 +31,7 @@ import sh.ory.hydra.model.PluginDevice;
  * PluginConfigLinux plugin config linux
  */
 @ApiModel(description = "PluginConfigLinux plugin config linux")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-05-10T16:38:21.290329757Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-07-14T15:27:18.942684284Z[Etc/UTC]")
 public class PluginConfigLinux {
   public static final String SERIALIZED_NAME_ALLOW_ALL_DEVICES = "AllowAllDevices";
   @SerializedName(SERIALIZED_NAME_ALLOW_ALL_DEVICES)

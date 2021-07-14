@@ -19,10 +19,10 @@ import sh.ory.hydra.model.AcceptLoginRequest;
 import sh.ory.hydra.model.CompletedRequest;
 import sh.ory.hydra.model.ConsentRequest;
 import sh.ory.hydra.model.FlushInactiveOAuth2TokensRequest;
-import sh.ory.hydra.model.GenericError;
 import sh.ory.hydra.model.HealthStatus;
 import sh.ory.hydra.model.JSONWebKey;
 import sh.ory.hydra.model.JSONWebKeySet;
+import sh.ory.hydra.model.JsonError;
 import sh.ory.hydra.model.JsonWebKeySetGeneratorRequest;
 import sh.ory.hydra.model.LoginRequest;
 import sh.ory.hydra.model.LogoutRequest;
@@ -404,21 +404,6 @@ public class AdminApiTest {
         String id = null;
         List<PatchDocument> body = null;
         OAuth2Client response = api.patchOAuth2Client(id, body);
-
-        // TODO: test validations
-    }
-    
-    /**
-     * Get Snapshot Metrics from the Hydra Service.
-     *
-     * If you&#39;re using k8s, you can then add annotations to your deployment like so:  &#x60;&#x60;&#x60; metadata: annotations: prometheus.io/port: \&quot;4445\&quot; prometheus.io/path: \&quot;/metrics/prometheus\&quot; &#x60;&#x60;&#x60;  If the service supports TLS Edge Termination, this endpoint does not require the &#x60;X-Forwarded-Proto&#x60; header to be set.
-     *
-     * @throws ApiException
-     *          if the Api call fails
-     */
-    @Test
-    public void prometheusTest() throws ApiException {
-        api.prometheus();
 
         // TODO: test validations
     }

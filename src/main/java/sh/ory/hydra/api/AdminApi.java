@@ -32,10 +32,10 @@ import sh.ory.hydra.model.AcceptLoginRequest;
 import sh.ory.hydra.model.CompletedRequest;
 import sh.ory.hydra.model.ConsentRequest;
 import sh.ory.hydra.model.FlushInactiveOAuth2TokensRequest;
-import sh.ory.hydra.model.GenericError;
 import sh.ory.hydra.model.HealthStatus;
 import sh.ory.hydra.model.JSONWebKey;
 import sh.ory.hydra.model.JSONWebKeySet;
+import sh.ory.hydra.model.JsonError;
 import sh.ory.hydra.model.JsonWebKeySetGeneratorRequest;
 import sh.ory.hydra.model.LoginRequest;
 import sh.ory.hydra.model.LogoutRequest;
@@ -83,8 +83,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call acceptConsentRequestCall(String consentChallenge, AcceptConsentRequest body, final ApiCallback _callback) throws ApiException {
@@ -146,8 +146,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public CompletedRequest acceptConsentRequest(String consentChallenge, AcceptConsentRequest body) throws ApiException {
@@ -166,8 +166,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<CompletedRequest> acceptConsentRequestWithHttpInfo(String consentChallenge, AcceptConsentRequest body) throws ApiException {
@@ -188,8 +188,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call acceptConsentRequestAsync(String consentChallenge, AcceptConsentRequest body, final ApiCallback<CompletedRequest> _callback) throws ApiException {
@@ -210,10 +210,10 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call acceptLoginRequestCall(String loginChallenge, AcceptLoginRequest body, final ApiCallback _callback) throws ApiException {
@@ -275,10 +275,10 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public CompletedRequest acceptLoginRequest(String loginChallenge, AcceptLoginRequest body) throws ApiException {
@@ -297,10 +297,10 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<CompletedRequest> acceptLoginRequestWithHttpInfo(String loginChallenge, AcceptLoginRequest body) throws ApiException {
@@ -321,10 +321,10 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call acceptLoginRequestAsync(String loginChallenge, AcceptLoginRequest body, final ApiCallback<CompletedRequest> _callback) throws ApiException {
@@ -344,8 +344,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call acceptLogoutRequestCall(String logoutChallenge, final ApiCallback _callback) throws ApiException {
@@ -406,8 +406,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public CompletedRequest acceptLogoutRequest(String logoutChallenge) throws ApiException {
@@ -425,8 +425,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<CompletedRequest> acceptLogoutRequestWithHttpInfo(String logoutChallenge) throws ApiException {
@@ -446,8 +446,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call acceptLogoutRequestAsync(String logoutChallenge, final ApiCallback<CompletedRequest> _callback) throws ApiException {
@@ -468,9 +468,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call createJsonWebKeySetCall(String set, JsonWebKeySetGeneratorRequest body, final ApiCallback _callback) throws ApiException {
@@ -529,9 +529,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public JSONWebKeySet createJsonWebKeySet(String set, JsonWebKeySetGeneratorRequest body) throws ApiException {
@@ -550,9 +550,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<JSONWebKeySet> createJsonWebKeySetWithHttpInfo(String set, JsonWebKeySetGeneratorRequest body) throws ApiException {
@@ -573,9 +573,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call createJsonWebKeySetAsync(String set, JsonWebKeySetGeneratorRequest body, final ApiCallback<JSONWebKeySet> _callback) throws ApiException {
@@ -595,9 +595,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 409 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 409 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call createOAuth2ClientCall(OAuth2Client body, final ApiCallback _callback) throws ApiException {
@@ -654,9 +654,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 409 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 409 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public OAuth2Client createOAuth2Client(OAuth2Client body) throws ApiException {
@@ -674,9 +674,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 409 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 409 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<OAuth2Client> createOAuth2ClientWithHttpInfo(OAuth2Client body) throws ApiException {
@@ -696,9 +696,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 201 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 409 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 409 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call createOAuth2ClientAsync(OAuth2Client body, final ApiCallback<OAuth2Client> _callback) throws ApiException {
@@ -719,9 +719,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call deleteJsonWebKeyCall(String kid, String set, final ApiCallback _callback) throws ApiException {
@@ -785,9 +785,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public void deleteJsonWebKey(String kid, String set) throws ApiException {
@@ -805,9 +805,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<Void> deleteJsonWebKeyWithHttpInfo(String kid, String set) throws ApiException {
@@ -827,9 +827,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call deleteJsonWebKeyAsync(String kid, String set, final ApiCallback<Void> _callback) throws ApiException {
@@ -848,9 +848,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call deleteJsonWebKeySetCall(String set, final ApiCallback _callback) throws ApiException {
@@ -907,9 +907,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public void deleteJsonWebKeySet(String set) throws ApiException {
@@ -926,9 +926,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<Void> deleteJsonWebKeySetWithHttpInfo(String set) throws ApiException {
@@ -947,9 +947,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call deleteJsonWebKeySetAsync(String set, final ApiCallback<Void> _callback) throws ApiException {
@@ -968,8 +968,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call deleteOAuth2ClientCall(String id, final ApiCallback _callback) throws ApiException {
@@ -1026,8 +1026,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public void deleteOAuth2Client(String id) throws ApiException {
@@ -1044,8 +1044,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<Void> deleteOAuth2ClientWithHttpInfo(String id) throws ApiException {
@@ -1064,8 +1064,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call deleteOAuth2ClientAsync(String id, final ApiCallback<Void> _callback) throws ApiException {
@@ -1084,8 +1084,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call deleteOAuth2TokenCall(String clientId, final ApiCallback _callback) throws ApiException {
@@ -1145,8 +1145,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public void deleteOAuth2Token(String clientId) throws ApiException {
@@ -1163,8 +1163,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<Void> deleteOAuth2TokenWithHttpInfo(String clientId) throws ApiException {
@@ -1183,8 +1183,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call deleteOAuth2TokenAsync(String clientId, final ApiCallback<Void> _callback) throws ApiException {
@@ -1203,8 +1203,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call flushInactiveOAuth2TokensCall(FlushInactiveOAuth2TokensRequest body, final ApiCallback _callback) throws ApiException {
@@ -1255,8 +1255,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public void flushInactiveOAuth2Tokens(FlushInactiveOAuth2TokensRequest body) throws ApiException {
@@ -1273,8 +1273,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<Void> flushInactiveOAuth2TokensWithHttpInfo(FlushInactiveOAuth2TokensRequest body) throws ApiException {
@@ -1293,8 +1293,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call flushInactiveOAuth2TokensAsync(FlushInactiveOAuth2TokensRequest body, final ApiCallback<Void> _callback) throws ApiException {
@@ -1313,9 +1313,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> consentRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
         <tr><td> 410 </td><td> requestWasHandledResponse </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call getConsentRequestCall(String consentChallenge, final ApiCallback _callback) throws ApiException {
@@ -1376,9 +1376,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> consentRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
         <tr><td> 410 </td><td> requestWasHandledResponse </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ConsentRequest getConsentRequest(String consentChallenge) throws ApiException {
@@ -1396,9 +1396,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> consentRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
         <tr><td> 410 </td><td> requestWasHandledResponse </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<ConsentRequest> getConsentRequestWithHttpInfo(String consentChallenge) throws ApiException {
@@ -1418,9 +1418,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> consentRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
         <tr><td> 410 </td><td> requestWasHandledResponse </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call getConsentRequestAsync(String consentChallenge, final ApiCallback<ConsentRequest> _callback) throws ApiException {
@@ -1441,8 +1441,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call getJsonWebKeyCall(String kid, String set, final ApiCallback _callback) throws ApiException {
@@ -1507,8 +1507,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public JSONWebKeySet getJsonWebKey(String kid, String set) throws ApiException {
@@ -1527,8 +1527,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<JSONWebKeySet> getJsonWebKeyWithHttpInfo(String kid, String set) throws ApiException {
@@ -1549,8 +1549,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call getJsonWebKeyAsync(String kid, String set, final ApiCallback<JSONWebKeySet> _callback) throws ApiException {
@@ -1570,9 +1570,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call getJsonWebKeySetCall(String set, final ApiCallback _callback) throws ApiException {
@@ -1630,9 +1630,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public JSONWebKeySet getJsonWebKeySet(String set) throws ApiException {
@@ -1650,9 +1650,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<JSONWebKeySet> getJsonWebKeySetWithHttpInfo(String set) throws ApiException {
@@ -1672,9 +1672,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call getJsonWebKeySetAsync(String set, final ApiCallback<JSONWebKeySet> _callback) throws ApiException {
@@ -1694,10 +1694,10 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> loginRequest </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
         <tr><td> 410 </td><td> requestWasHandledResponse </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call getLoginRequestCall(String loginChallenge, final ApiCallback _callback) throws ApiException {
@@ -1758,10 +1758,10 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> loginRequest </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
         <tr><td> 410 </td><td> requestWasHandledResponse </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public LoginRequest getLoginRequest(String loginChallenge) throws ApiException {
@@ -1779,10 +1779,10 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> loginRequest </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
         <tr><td> 410 </td><td> requestWasHandledResponse </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<LoginRequest> getLoginRequestWithHttpInfo(String loginChallenge) throws ApiException {
@@ -1802,10 +1802,10 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> loginRequest </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
         <tr><td> 410 </td><td> requestWasHandledResponse </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call getLoginRequestAsync(String loginChallenge, final ApiCallback<LoginRequest> _callback) throws ApiException {
@@ -1825,9 +1825,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> logoutRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
         <tr><td> 410 </td><td> requestWasHandledResponse </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call getLogoutRequestCall(String logoutChallenge, final ApiCallback _callback) throws ApiException {
@@ -1888,9 +1888,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> logoutRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
         <tr><td> 410 </td><td> requestWasHandledResponse </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public LogoutRequest getLogoutRequest(String logoutChallenge) throws ApiException {
@@ -1908,9 +1908,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> logoutRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
         <tr><td> 410 </td><td> requestWasHandledResponse </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<LogoutRequest> getLogoutRequestWithHttpInfo(String logoutChallenge) throws ApiException {
@@ -1930,9 +1930,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> logoutRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
         <tr><td> 410 </td><td> requestWasHandledResponse </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call getLogoutRequestAsync(String logoutChallenge, final ApiCallback<LogoutRequest> _callback) throws ApiException {
@@ -1952,8 +1952,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call getOAuth2ClientCall(String id, final ApiCallback _callback) throws ApiException {
@@ -2011,8 +2011,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public OAuth2Client getOAuth2Client(String id) throws ApiException {
@@ -2030,8 +2030,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<OAuth2Client> getOAuth2ClientWithHttpInfo(String id) throws ApiException {
@@ -2051,8 +2051,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call getOAuth2ClientAsync(String id, final ApiCallback<OAuth2Client> _callback) throws ApiException {
@@ -2175,8 +2175,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2TokenIntrospection </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call introspectOAuth2TokenCall(String token, String scope, final ApiCallback _callback) throws ApiException {
@@ -2242,8 +2242,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2TokenIntrospection </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public OAuth2TokenIntrospection introspectOAuth2Token(String token, String scope) throws ApiException {
@@ -2262,8 +2262,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2TokenIntrospection </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<OAuth2TokenIntrospection> introspectOAuth2TokenWithHttpInfo(String token, String scope) throws ApiException {
@@ -2284,8 +2284,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2TokenIntrospection </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call introspectOAuth2TokenAsync(String token, String scope, final ApiCallback<OAuth2TokenIntrospection> _callback) throws ApiException {
@@ -2304,7 +2304,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> healthStatus </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call isInstanceAliveCall(final ApiCallback _callback) throws ApiException {
@@ -2355,7 +2355,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> healthStatus </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public HealthStatus isInstanceAlive() throws ApiException {
@@ -2372,7 +2372,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> healthStatus </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<HealthStatus> isInstanceAliveWithHttpInfo() throws ApiException {
@@ -2391,7 +2391,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> healthStatus </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call isInstanceAliveAsync(final ApiCallback<HealthStatus> _callback) throws ApiException {
@@ -2412,7 +2412,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> A list of clients. </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call listOAuth2ClientsCall(Long limit, Long offset, final ApiCallback _callback) throws ApiException {
@@ -2473,7 +2473,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> A list of clients. </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public List<OAuth2Client> listOAuth2Clients(Long limit, Long offset) throws ApiException {
@@ -2492,7 +2492,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> A list of clients. </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<List<OAuth2Client>> listOAuth2ClientsWithHttpInfo(Long limit, Long offset) throws ApiException {
@@ -2513,7 +2513,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> A list of clients. </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call listOAuth2ClientsAsync(Long limit, Long offset, final ApiCallback<List<OAuth2Client>> _callback) throws ApiException {
@@ -2533,8 +2533,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> A list of used consent requests. </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call listSubjectConsentSessionsCall(String subject, final ApiCallback _callback) throws ApiException {
@@ -2595,8 +2595,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> A list of used consent requests. </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public List<PreviousConsentSession> listSubjectConsentSessions(String subject) throws ApiException {
@@ -2614,8 +2614,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> A list of used consent requests. </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<List<PreviousConsentSession>> listSubjectConsentSessionsWithHttpInfo(String subject) throws ApiException {
@@ -2635,8 +2635,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> A list of used consent requests. </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call listSubjectConsentSessionsAsync(String subject, final ApiCallback<List<PreviousConsentSession>> _callback) throws ApiException {
@@ -2657,7 +2657,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call patchOAuth2ClientCall(String id, List<PatchDocument> body, final ApiCallback _callback) throws ApiException {
@@ -2721,7 +2721,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public OAuth2Client patchOAuth2Client(String id, List<PatchDocument> body) throws ApiException {
@@ -2740,7 +2740,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<OAuth2Client> patchOAuth2ClientWithHttpInfo(String id, List<PatchDocument> body) throws ApiException {
@@ -2761,7 +2761,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call patchOAuth2ClientAsync(String id, List<PatchDocument> body, final ApiCallback<OAuth2Client> _callback) throws ApiException {
@@ -2769,104 +2769,6 @@ public class AdminApi {
         okhttp3.Call localVarCall = patchOAuth2ClientValidateBeforeCall(id, body, _callback);
         Type localVarReturnType = new TypeToken<OAuth2Client>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-        return localVarCall;
-    }
-    /**
-     * Build call for prometheus
-     * @param _callback Callback for upload/download progress
-     * @return Call to execute
-     * @throws ApiException If fail to serialize the request body object
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-     </table>
-     */
-    public okhttp3.Call prometheusCall(final ApiCallback _callback) throws ApiException {
-        Object localVarPostBody = null;
-
-        // create path and map variables
-        String localVarPath = "/metrics/prometheus";
-
-        List<Pair> localVarQueryParams = new ArrayList<Pair>();
-        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-        Map<String, String> localVarCookieParams = new HashMap<String, String>();
-        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-        final String[] localVarAccepts = {
-            
-        };
-        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-        if (localVarAccept != null) {
-            localVarHeaderParams.put("Accept", localVarAccept);
-        }
-
-        final String[] localVarContentTypes = {
-            
-        };
-        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-        localVarHeaderParams.put("Content-Type", localVarContentType);
-
-        String[] localVarAuthNames = new String[] {  };
-        return localVarApiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call prometheusValidateBeforeCall(final ApiCallback _callback) throws ApiException {
-        
-
-        okhttp3.Call localVarCall = prometheusCall(_callback);
-        return localVarCall;
-
-    }
-
-    /**
-     * Get Snapshot Metrics from the Hydra Service.
-     * If you&#39;re using k8s, you can then add annotations to your deployment like so:  &#x60;&#x60;&#x60; metadata: annotations: prometheus.io/port: \&quot;4445\&quot; prometheus.io/path: \&quot;/metrics/prometheus\&quot; &#x60;&#x60;&#x60;  If the service supports TLS Edge Termination, this endpoint does not require the &#x60;X-Forwarded-Proto&#x60; header to be set.
-     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-     </table>
-     */
-    public void prometheus() throws ApiException {
-        prometheusWithHttpInfo();
-    }
-
-    /**
-     * Get Snapshot Metrics from the Hydra Service.
-     * If you&#39;re using k8s, you can then add annotations to your deployment like so:  &#x60;&#x60;&#x60; metadata: annotations: prometheus.io/port: \&quot;4445\&quot; prometheus.io/path: \&quot;/metrics/prometheus\&quot; &#x60;&#x60;&#x60;  If the service supports TLS Edge Termination, this endpoint does not require the &#x60;X-Forwarded-Proto&#x60; header to be set.
-     * @return ApiResponse&lt;Void&gt;
-     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-     </table>
-     */
-    public ApiResponse<Void> prometheusWithHttpInfo() throws ApiException {
-        okhttp3.Call localVarCall = prometheusValidateBeforeCall(null);
-        return localVarApiClient.execute(localVarCall);
-    }
-
-    /**
-     * Get Snapshot Metrics from the Hydra Service. (asynchronously)
-     * If you&#39;re using k8s, you can then add annotations to your deployment like so:  &#x60;&#x60;&#x60; metadata: annotations: prometheus.io/port: \&quot;4445\&quot; prometheus.io/path: \&quot;/metrics/prometheus\&quot; &#x60;&#x60;&#x60;  If the service supports TLS Edge Termination, this endpoint does not require the &#x60;X-Forwarded-Proto&#x60; header to be set.
-     * @param _callback The callback to be executed when the API call finishes
-     * @return The request call
-     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-     </table>
-     */
-    public okhttp3.Call prometheusAsync(final ApiCallback<Void> _callback) throws ApiException {
-
-        okhttp3.Call localVarCall = prometheusValidateBeforeCall(_callback);
-        localVarApiClient.executeAsync(localVarCall, _callback);
         return localVarCall;
     }
     /**
@@ -2880,8 +2782,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call rejectConsentRequestCall(String consentChallenge, RejectRequest body, final ApiCallback _callback) throws ApiException {
@@ -2943,8 +2845,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public CompletedRequest rejectConsentRequest(String consentChallenge, RejectRequest body) throws ApiException {
@@ -2963,8 +2865,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<CompletedRequest> rejectConsentRequestWithHttpInfo(String consentChallenge, RejectRequest body) throws ApiException {
@@ -2985,8 +2887,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call rejectConsentRequestAsync(String consentChallenge, RejectRequest body, final ApiCallback<CompletedRequest> _callback) throws ApiException {
@@ -3007,10 +2909,10 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call rejectLoginRequestCall(String loginChallenge, RejectRequest body, final ApiCallback _callback) throws ApiException {
@@ -3072,10 +2974,10 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public CompletedRequest rejectLoginRequest(String loginChallenge, RejectRequest body) throws ApiException {
@@ -3094,10 +2996,10 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<CompletedRequest> rejectLoginRequestWithHttpInfo(String loginChallenge, RejectRequest body) throws ApiException {
@@ -3118,10 +3020,10 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> completedRequest </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call rejectLoginRequestAsync(String loginChallenge, RejectRequest body, final ApiCallback<CompletedRequest> _callback) throws ApiException {
@@ -3142,8 +3044,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call rejectLogoutRequestCall(String logoutChallenge, RejectRequest body, final ApiCallback _callback) throws ApiException {
@@ -3204,8 +3106,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public void rejectLogoutRequest(String logoutChallenge, RejectRequest body) throws ApiException {
@@ -3223,8 +3125,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<Void> rejectLogoutRequestWithHttpInfo(String logoutChallenge, RejectRequest body) throws ApiException {
@@ -3244,8 +3146,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 404 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 404 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call rejectLogoutRequestAsync(String logoutChallenge, RejectRequest body, final ApiCallback<Void> _callback) throws ApiException {
@@ -3264,8 +3166,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call revokeAuthenticationSessionCall(String subject, final ApiCallback _callback) throws ApiException {
@@ -3325,8 +3227,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public void revokeAuthenticationSession(String subject) throws ApiException {
@@ -3343,8 +3245,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<Void> revokeAuthenticationSessionWithHttpInfo(String subject) throws ApiException {
@@ -3363,8 +3265,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call revokeAuthenticationSessionAsync(String subject, final ApiCallback<Void> _callback) throws ApiException {
@@ -3385,8 +3287,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call revokeConsentSessionsCall(String subject, String client, Boolean all, final ApiCallback _callback) throws ApiException {
@@ -3456,8 +3358,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public void revokeConsentSessions(String subject, String client, Boolean all) throws ApiException {
@@ -3476,8 +3378,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<Void> revokeConsentSessionsWithHttpInfo(String subject, String client, Boolean all) throws ApiException {
@@ -3498,8 +3400,8 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 204 </td><td> Empty responses are sent when, for example, resources are deleted. The HTTP status code for empty responses is typically 201. </td><td>  -  </td></tr>
-        <tr><td> 400 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call revokeConsentSessionsAsync(String subject, String client, Boolean all, final ApiCallback<Void> _callback) throws ApiException {
@@ -3520,9 +3422,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKey </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call updateJsonWebKeyCall(String kid, String set, JSONWebKey body, final ApiCallback _callback) throws ApiException {
@@ -3588,9 +3490,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKey </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public JSONWebKey updateJsonWebKey(String kid, String set, JSONWebKey body) throws ApiException {
@@ -3610,9 +3512,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKey </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<JSONWebKey> updateJsonWebKeyWithHttpInfo(String kid, String set, JSONWebKey body) throws ApiException {
@@ -3634,9 +3536,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKey </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call updateJsonWebKeyAsync(String kid, String set, JSONWebKey body, final ApiCallback<JSONWebKey> _callback) throws ApiException {
@@ -3657,9 +3559,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call updateJsonWebKeySetCall(String set, JSONWebKeySet body, final ApiCallback _callback) throws ApiException {
@@ -3718,9 +3620,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public JSONWebKeySet updateJsonWebKeySet(String set, JSONWebKeySet body) throws ApiException {
@@ -3739,9 +3641,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<JSONWebKeySet> updateJsonWebKeySetWithHttpInfo(String set, JSONWebKeySet body) throws ApiException {
@@ -3762,9 +3664,9 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> JSONWebKeySet </td><td>  -  </td></tr>
-        <tr><td> 401 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 403 </td><td> genericError </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 401 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 403 </td><td> jsonError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call updateJsonWebKeySetAsync(String set, JSONWebKeySet body, final ApiCallback<JSONWebKeySet> _callback) throws ApiException {
@@ -3785,7 +3687,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call updateOAuth2ClientCall(String id, OAuth2Client body, final ApiCallback _callback) throws ApiException {
@@ -3849,7 +3751,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public OAuth2Client updateOAuth2Client(String id, OAuth2Client body) throws ApiException {
@@ -3868,7 +3770,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public ApiResponse<OAuth2Client> updateOAuth2ClientWithHttpInfo(String id, OAuth2Client body) throws ApiException {
@@ -3889,7 +3791,7 @@ public class AdminApi {
      <table summary="Response Details" border="1">
         <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
         <tr><td> 200 </td><td> oAuth2Client </td><td>  -  </td></tr>
-        <tr><td> 500 </td><td> genericError </td><td>  -  </td></tr>
+        <tr><td> 500 </td><td> jsonError </td><td>  -  </td></tr>
      </table>
      */
     public okhttp3.Call updateOAuth2ClientAsync(String id, OAuth2Client body, final ApiCallback<OAuth2Client> _callback) throws ApiException {

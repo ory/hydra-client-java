@@ -21,72 +21,55 @@ import com.google.gson.stream.JsonWriter;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
-import sh.ory.hydra.model.OAuth2Client;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
 
 /**
- * Model tests for LogoutRequest
+ * Model tests for JsonError
  */
-public class LogoutRequestTest {
-    private final LogoutRequest model = new LogoutRequest();
+public class JsonErrorTest {
+    private final JsonError model = new JsonError();
 
     /**
-     * Model tests for LogoutRequest
+     * Model tests for JsonError
      */
     @Test
-    public void testLogoutRequest() {
-        // TODO: test LogoutRequest
+    public void testJsonError() {
+        // TODO: test JsonError
     }
 
     /**
-     * Test the property 'challenge'
+     * Test the property 'error'
      */
     @Test
-    public void challengeTest() {
-        // TODO: test challenge
+    public void errorTest() {
+        // TODO: test error
     }
 
     /**
-     * Test the property 'client'
+     * Test the property 'errorDebug'
      */
     @Test
-    public void clientTest() {
-        // TODO: test client
+    public void errorDebugTest() {
+        // TODO: test errorDebug
     }
 
     /**
-     * Test the property 'requestUrl'
+     * Test the property 'errorDescription'
      */
     @Test
-    public void requestUrlTest() {
-        // TODO: test requestUrl
+    public void errorDescriptionTest() {
+        // TODO: test errorDescription
     }
 
     /**
-     * Test the property 'rpInitiated'
+     * Test the property 'statusCode'
      */
     @Test
-    public void rpInitiatedTest() {
-        // TODO: test rpInitiated
-    }
-
-    /**
-     * Test the property 'sid'
-     */
-    @Test
-    public void sidTest() {
-        // TODO: test sid
-    }
-
-    /**
-     * Test the property 'subject'
-     */
-    @Test
-    public void subjectTest() {
-        // TODO: test subject
+    public void statusCodeTest() {
+        // TODO: test statusCode
     }
 
 }
