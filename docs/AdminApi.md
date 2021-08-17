@@ -1261,7 +1261,7 @@ No authorization required
 
 <a name="listOAuth2Clients"></a>
 # **listOAuth2Clients**
-> List&lt;OAuth2Client&gt; listOAuth2Clients(limit, offset)
+> List&lt;OAuth2Client&gt; listOAuth2Clients(limit, offset, name, owner)
 
 List OAuth 2.0 Clients
 
@@ -1282,10 +1282,12 @@ public class Example {
     defaultClient.setBasePath("http://localhost");
 
     AdminApi apiInstance = new AdminApi(defaultClient);
-    Long limit = 56L; // Long | The maximum amount of policies returned, upper bound is 500 policies
+    Long limit = 56L; // Long | The maximum amount of clients to returned, upper bound is 500 clients.
     Long offset = 56L; // Long | The offset from where to start looking.
+    String name = "name_example"; // String | The name of the clients to filter by.
+    String owner = "owner_example"; // String | The owner of the clients to filter by.
     try {
-      List<OAuth2Client> result = apiInstance.listOAuth2Clients(limit, offset);
+      List<OAuth2Client> result = apiInstance.listOAuth2Clients(limit, offset, name, owner);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AdminApi#listOAuth2Clients");
@@ -1302,8 +1304,10 @@ public class Example {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **limit** | **Long**| The maximum amount of policies returned, upper bound is 500 policies | [optional]
+ **limit** | **Long**| The maximum amount of clients to returned, upper bound is 500 clients. | [optional]
  **offset** | **Long**| The offset from where to start looking. | [optional]
+ **name** | **String**| The name of the clients to filter by. | [optional]
+ **owner** | **String**| The owner of the clients to filter by. | [optional]
 
 ### Return type
 

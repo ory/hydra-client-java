@@ -3,7 +3,7 @@ info:
   description: Welcome to the ORY Hydra HTTP API documentation. You will find documentation
     for all HTTP APIs here.
   title: ORY Hydra
-  version: v1.10.3
+  version: v1.10.5
 servers:
 - url: /
 paths:
@@ -74,7 +74,8 @@ paths:
         Multiple links can be included in this header, and will be separated by a comma.
       operationId: listOAuth2Clients
       parameters:
-      - description: The maximum amount of policies returned, upper bound is 500 policies
+      - description: The maximum amount of clients to returned, upper bound is 500
+          clients.
         in: query
         name: limit
         schema:
@@ -86,6 +87,16 @@ paths:
         schema:
           format: int64
           type: integer
+      - description: The name of the clients to filter by.
+        in: query
+        name: name
+        schema:
+          type: string
+      - description: The owner of the clients to filter by.
+        in: query
+        name: owner
+        schema:
+          type: string
       responses:
         "200":
           content:
@@ -1919,9 +1930,6 @@ components:
     PluginConfigInterface:
       description: PluginConfigInterface The interface between Docker and the plugin
       properties:
-        ProtocolScheme:
-          description: Protocol to use for clients connecting to the plugin.
-          type: string
         Socket:
           description: socket
           type: string
