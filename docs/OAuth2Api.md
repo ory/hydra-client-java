@@ -952,7 +952,7 @@ public class Example {
 
     OAuth2Api apiInstance = new OAuth2Api(defaultClient);
     Long pageSize = 250L; // Long | Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
-    String pageToken = "1"; // String | Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
+    String pageToken = "pageToken_example"; // String | Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
     String clientName = "clientName_example"; // String | The name of the clients to filter by.
     String owner = "owner_example"; // String | The owner of the clients to filter by.
     try {
@@ -974,7 +974,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **pageSize** | **Long**| Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to 250] |
-| **pageToken** | **String**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to 1] |
+| **pageToken** | **String**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] |
 | **clientName** | **String**| The name of the clients to filter by. | [optional] |
 | **owner** | **String**| The owner of the clients to filter by. | [optional] |
 
@@ -1068,7 +1068,7 @@ No authorization required
 
 <a id="listTrustedOAuth2JwtGrantIssuers"></a>
 # **listTrustedOAuth2JwtGrantIssuers**
-> List&lt;TrustedOAuth2JwtGrantIssuer&gt; listTrustedOAuth2JwtGrantIssuers(maxItems, defaultItems, issuer)
+> List&lt;TrustedOAuth2JwtGrantIssuer&gt; listTrustedOAuth2JwtGrantIssuers(pageSize, pageToken, issuer)
 
 List Trusted OAuth2 JWT Bearer Grant Type Issuers
 
@@ -1089,11 +1089,11 @@ public class Example {
     defaultClient.setBasePath("http://localhost");
 
     OAuth2Api apiInstance = new OAuth2Api(defaultClient);
-    Long maxItems = 56L; // Long | 
-    Long defaultItems = 56L; // Long | 
+    Long pageSize = 250L; // Long | Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
+    String pageToken = "pageToken_example"; // String | Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination).
     String issuer = "issuer_example"; // String | If optional \"issuer\" is supplied, only jwt-bearer grants with this issuer will be returned.
     try {
-      List<TrustedOAuth2JwtGrantIssuer> result = apiInstance.listTrustedOAuth2JwtGrantIssuers(maxItems, defaultItems, issuer);
+      List<TrustedOAuth2JwtGrantIssuer> result = apiInstance.listTrustedOAuth2JwtGrantIssuers(pageSize, pageToken, issuer);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling OAuth2Api#listTrustedOAuth2JwtGrantIssuers");
@@ -1110,8 +1110,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **maxItems** | **Long**|  | [optional] |
-| **defaultItems** | **Long**|  | [optional] |
+| **pageSize** | **Long**| Items per Page  This is the number of items per page to return. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] [default to 250] |
+| **pageToken** | **String**| Next Page Token  The next page token. For details on pagination please head over to the [pagination documentation](https://www.ory.sh/docs/ecosystem/api-design#pagination). | [optional] |
 | **issuer** | **String**| If optional \&quot;issuer\&quot; is supplied, only jwt-bearer grants with this issuer will be returned. | [optional] |
 
 ### Return type
@@ -1198,7 +1198,7 @@ No authorization required
 
 The OAuth 2.0 Device Authorize Endpoint
 
-This endpoint is not documented here because you should never use your own implementation to perform OAuth2 flows. OAuth2 is a very popular protocol and a library for your programming language will exists.  To learn more about this flow please refer to the specification: https://tools.ietf.org/html/rfc8628
+This endpoint is not documented here because you should never use your own implementation to perform OAuth2 flows. OAuth2 is a very popular protocol and a library for your programming language will exist.  To learn more about this flow please refer to the specification: https://tools.ietf.org/html/rfc8628
 
 ### Example
 ```java
@@ -1404,7 +1404,7 @@ No authorization required
 
 OAuth 2.0 Device Verification Endpoint
 
-This is the device user verification endpoint. The user is redirected here when trying to login using the device flow.
+This is the device user verification endpoint. The user is redirected here when trying to log in using the device flow.
 
 ### Example
 ```java
@@ -1651,7 +1651,7 @@ No authorization required
 
 <a id="revokeOAuth2ConsentSessions"></a>
 # **revokeOAuth2ConsentSessions**
-> revokeOAuth2ConsentSessions(subject, client, all)
+> revokeOAuth2ConsentSessions(subject, client, consentRequestId, all)
 
 Revoke OAuth 2.0 Consent Sessions of a Subject
 
@@ -1674,9 +1674,10 @@ public class Example {
     OAuth2Api apiInstance = new OAuth2Api(defaultClient);
     String subject = "subject_example"; // String | OAuth 2.0 Consent Subject  The subject whose consent sessions should be deleted.
     String client = "client_example"; // String | OAuth 2.0 Client ID  If set, deletes only those consent sessions that have been granted to the specified OAuth 2.0 Client ID.
+    String consentRequestId = "consentRequestId_example"; // String | Consent Request ID  If set, revoke all token chains derived from this particular consent request ID.
     Boolean all = true; // Boolean | Revoke All Consent Sessions  If set to `true` deletes all consent sessions by the Subject that have been granted.
     try {
-      apiInstance.revokeOAuth2ConsentSessions(subject, client, all);
+      apiInstance.revokeOAuth2ConsentSessions(subject, client, consentRequestId, all);
     } catch (ApiException e) {
       System.err.println("Exception when calling OAuth2Api#revokeOAuth2ConsentSessions");
       System.err.println("Status code: " + e.getCode());
@@ -1692,8 +1693,9 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **subject** | **String**| OAuth 2.0 Consent Subject  The subject whose consent sessions should be deleted. | |
+| **subject** | **String**| OAuth 2.0 Consent Subject  The subject whose consent sessions should be deleted. | [optional] |
 | **client** | **String**| OAuth 2.0 Client ID  If set, deletes only those consent sessions that have been granted to the specified OAuth 2.0 Client ID. | [optional] |
+| **consentRequestId** | **String**| Consent Request ID  If set, revoke all token chains derived from this particular consent request ID. | [optional] |
 | **all** | **Boolean**| Revoke All Consent Sessions  If set to &#x60;true&#x60; deletes all consent sessions by the Subject that have been granted. | [optional] |
 
 ### Return type
